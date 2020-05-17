@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginxapp:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    container_name: load-balancer  
+    ports:
+      - "9090:8080"
+    
+        
+
+     
